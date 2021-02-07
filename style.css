@@ -23,7 +23,6 @@ body {
     html { background-color: darkslategray; color: ghostwhite }
     a:link { color:paleturquoise }
     a:visited { color:paleturquoise}
-    .tabcontent h1, h2, h3, h4, h5, h6, p { color: darkslategray }
 }
 
 .title {
