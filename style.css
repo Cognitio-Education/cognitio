@@ -106,6 +106,7 @@ body {
     border-top: none;
     margin-left: 10%;
     margin-right: 10%;
+    color: darkslategrey;
 }
 
 .answer {
@@ -136,6 +137,10 @@ blockquote p::after {
 a {
     color: blue;
     text-decoration: none;
+}
+
+.intab {	
+    width: 30%;	
 }
 
 
