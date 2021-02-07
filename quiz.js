@@ -7,19 +7,19 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         
         for(var i=0; i<questions.length; i++) {
             answers = [];
-            for(letter in questions[i].answers){
+            for(var letter in questions[i].answers){
                 answers.push(
                     '<label>'
-                        + '<input type="radio" name"question'+i+'" value="'+letter+'">'
+                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                         + letter + ": "
                         + questions[i].answers[letter]
-                    + '</label>'
+                    + '</label><br>'
                 );
             }
             
             output.push(
-                '<div class="question">' + questions[i].question + '</div>'
-                + '<div class="answers">' + answers.join('') + '</div>'
+                '<div class="question"><b>' + questions[i].question + '</b></div>'
+                + '<div class="answers">' + answers.join('') + '</div><br>'
             );
         }
         quizContainer.innerHTML = output.join('');
@@ -41,8 +41,18 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
                 answerContainers[i].style.color = 'red';
             }
         }
-        
-        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+        if (numCorrect == questions.length) {
+            resultsContainer.innerHTML = "You got " + numCorrect + ' out of ' + questions.length + "! Keep it up!";
+        }
+        else if (numCorrect > questions.length / 2) {
+            resultsContainer.innerHTML = "You got " + numCorrect + ' out of ' + questions.length + ". You're almost there, go over the ones you got wrong!";
+        }
+        else if (numCorrect <= questions.length / 2 && numCorrect > 0) {
+            resultsContainer.innerHTML = "You got " + numCorrect + ' out of ' + questions.length + ". You're not quite there yet, keep revising the topic!";
+        }
+        else if (numCorrect == 0) {
+            resultsContainer.innerHTML = "You got " + numCorrect + ' out of ' + questions.length + ". You need to revise the topic more, make sure you read the questions!";
+        }
     }
     
     showQuestions(questions, quizContainer);
@@ -54,22 +64,64 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
 var metals_acids = [
     {
-        question: "Which of the following is NOT a property of all metals?",
+        question: "Metal + water -> ?",
         answers: {
-            a: "Sonorous",
-            b: "Conductive of electrical or thermal energy",
-            c: "Malleable",
-            d: "Reacts with acid"
+            a: "metal hydroxide + hydrogen",
+            b: "metal oxide + hydrogen",
+            c: "metal hydroxide + water",
+            d: "metal sulfate + water"
         },
-        correctAnswer: 'd'
+        correctAnswer: "a"
     },
     {
-        question: "True or false - All metals tarnish.",
+        question: "Metal + acid -> ?",
         answers: {
-            a: "True",
-            b: "False"
+            a: "salt + water",
+            b: "salt + hydrogen",
+            c: "salt",
+            d: "metal oxide + water"
         },
-        correctAnswer: 'a'
+        correctAnswer: "b"
+    },
+    {
+        question: "Nitric acid forms which type of salt with metals?",
+        answers: {
+            a: "Metal sulfate",
+            b: "Metal hydronitrate",
+            c: "Metal nitrate",
+            d: "Metal nitride"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "What colour flame does potassium produce in water?",
+        answers: {
+            a: "Green",
+            b: "Lilac",
+            c: "Yellow",
+            d: "Blue"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Acid + ammonia -> ?",
+        answers: {
+            a: "ammonium salt + water",
+            b: "ammonium salt",
+            c: "salt + hydrogen",
+            d: "ammonium salt + carbon dioxide"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "What must NOT be done when preparing a sample of salt?",
+        answers: {
+            a: "heat the acid",
+            b: "add the metal/metal compound with stirring",
+            c: "evaporate the excess water",
+            d: "boil the acid"
+        },
+        correctAnswer: "d"
     }
 ]
 

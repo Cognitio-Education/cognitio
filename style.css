@@ -13,6 +13,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.tabcontent {
+    color: darkslategray;
+}
+
 @media (prefers-color-scheme: light) {
     html { background-color: ghostwhite; color: darkslategray }
     a:link { color:paleturquoise }
@@ -106,7 +110,6 @@ body {
     border-top: none;
     margin-left: 10%;
     margin-right: 10%;
-    color: darkslategrey;
 }
 
 .answer {
@@ -139,9 +142,8 @@ a {
     text-decoration: none;
 }
 
-.intab {	
-    width: 30%;	
+.intab {
+    width: 30%;
 }
-
 
 
