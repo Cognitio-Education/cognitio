@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cell Structure - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>Cell Structure</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <script src="/answers.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RevisionNotes')" id="defaultOpen">Revision Notes</button>
+            <button class="tablinks" onclick="openTab(event, 'QuickQuiz')">Quick Quiz</button>
+            <button class="tablinks" onclick="openTab(event, 'PracticeExamQuestions')">Practice and Exam Questions</button>
+            <button class="tablinks" onclick="location.href='/bio.html';">Back</button>
+        </div>
+        <div id="RevisionNotes" class="tabcontent">
+            <h3>Revision Notes</h3>
+        </div>
+        <div id="QuickQuiz" class="tabcontent">
+            <h3>Quick Quiz</h3>
+        </div>
+        <div id="PracticeExamQuestions" class="tabcontent">
+            <h3>Practice and Exam Questions</h3>
+            <p><em>Note that the Practice Question(s) do not confine to the exam spec exactly but rather test knowledge on the subject.</em></p>
+            <p><em>(Image by Ttn025 under the CC-BY-SA 3.0 license)</em></p>
+            <img src="/images/bio/AnimalCell.png" class="intab">
+            <ol type="a">
+                <li>Name the structures <b>A</b>, <b>B</b>, and <b>C</b> in the diagram. <button class="answer" onclick="alert('A = cytoplasm; B = nucleus; C = cell membrane')">Show Answer</button></li>
+                <li>This cell is an animal cell. Why can this cell <b>not</b> be a plant cell? <button class="answer" onclick="alert('Any one of: Has no cell wall; has no chloroplasts; vacuole is small')">Show Answer</button></li>
+                <li>Name the function of structure <b>C</b>. <button class="answer" onclick="alert('Control of substances into and out of the cell.')">Show Answer</button></li>
+                <li>Prove that the cell is <b>eukaryotic</b>, in terms of <b>genetic material</b>. <button class="answer" onclick="alert('The DNA is held in a nucleus as opposed to a single loop of DNA.')">Show Answer</button></li>
+            </ol>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <hr>
+    <footer><div class="attribution">"Show Answers" CSS code by adardesign on Stack Overflow.</div></footer>
+</html>

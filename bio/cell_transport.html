@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cell Transport - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>Cell Transport</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RevisionNotes')" id="defaultOpen">Revision Notes</button>
+            <button class="tablinks" onclick="openTab(event, 'QuickQuiz')">Quick Quiz</button>
+            <button class="tablinks" onclick="openTab(event, 'PracticeExamQuestions')">Practice and Exam Questions</button>
+            <button class="tablinks" onclick="location.href='/bio.html';">Back</button>
+        </div>
+        <div id="RevisionNotes" class="tabcontent">
+            <h3>Revision Notes</h3>
+        </div>
+        <div id="QuickQuiz" class="tabcontent">
+            <h3>Quick Quiz</h3>
+        </div>
+        <div id="PracticeExamQuestions" class="tabcontent">
+            <h3>Practice and Exam Questions</h3>
+            <p><em>Note that the Practice Question(s) do not confine to the exam spec exactly but rather test knowledge on the subject.</em></p>
+            <ol type="a">
+                <li>
+                    Below is a definition of a cellular process: <br>
+                    <blockquote><p>The net movement of particles down a concentration gradient until equilibrium is reached in terms of concentration.</p></blockquote>
+                    Which process can the definition <b>not</b> apply to? <button class="answer" onclick="alert('iii: Active Transport')">Show Answer</button><br>
+                    <ol type="i">
+                        <li>Osmosis</li>
+                        <li>Diffusion</li>
+                        <li>Active Transport</li>
+                    </ol>
+                </li> <br>
+                <li>
+                    <em>(Image by Szczepan1990 under the CC-BY-SA 2.5 license)</em> <br> <br>
+                    <img src="/images/bio/LeafAnatomyNumbered.png" class="intab"> <br>
+                    <p>The diagram above shows a cross-sectional diagram of a leaf.</p>
+                    <ol type="i">
+                        <li>Name the part labelled [6].<button class="answer" onclick="alert('Stoma/stomata')">Show Answer</button></li>
+                        <li>Describe the processes by which the leaf cell uses diffusion to obtain carbon dioxide, stating its use for carbon dioxide. You should aim to make at least 4 points.<button class="answer" onclick="alert('Accept at most four marks: Carbon dioxide (1) which is needed for photosynthesis (1) diffuses with a net movement of particles (1) from the area of high concentration in the air (1) to the area of low concentration inside the leaf (1). Equilibrium cannot be reached because the CO2 is being used up (1).')">Show Answer</button></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <hr>
+    <footer><div class="attribution">"Show Answers" CSS code by adardesign on Stack Overflow.</div></footer>
+</html>

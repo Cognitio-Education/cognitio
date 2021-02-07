@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+.homelink a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+    html { background-color: ghostwhite; color: darkslategray }
+    a:link { color:paleturquoise }
+    a:visited { color:paleturquoise}
+}
+
+@media (prefers-color-scheme: dark) {
+    html { background-color: darkslategray; color: ghostwhite }
+    a:link { color:paleturquoise }
+    a:visited { color:paleturquoise}
+    .tabcontent h1, h2, h3, h4, h5, h6, p { color: darkslategray }
+}
+
+.title {
+    text-align: center;
+}
+
+.topics {
+    text-align: center;
+    align-content: center;
+}
+
+.subjectselection {
+    text-align: center;
+}
+
+.subjects {
+    table-layout: fixed;
+    width: 30%;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subjects td {
+    padding: 0px;
+}
+
+.subjects table {
+    border-collapse: collapse;
+    border: 0px;
+    border-spacing: 0px;
+}
+
+.subjects p {
+    margin: 0px;
+}
+
+.about {
+    align-self: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button:active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    background-color: white;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.answer {
+  background: none!important;
+  border: none;
+  color: #069;
+  cursor: pointer;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.intab {
+    width: 30%;
+}
+
+

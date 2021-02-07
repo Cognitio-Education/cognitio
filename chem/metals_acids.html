@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metals and Acids - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>Microscopes</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RevisionNotes')" id="defaultOpen">Revision Notes</button>
+            <button class="tablinks" onclick="openTab(event, 'QuickQuiz')">Quick Quiz</button>
+            <button class="tablinks" onclick="openTab(event, 'PracticeExamQuestions')">Practice and Exam Questions</button>
+            <button class="tablinks" onclick="location.href='/chem.html';">Back</button>
+        </div>
+        <div id="RevisionNotes" class="tabcontent">
+            <h3>Revision Notes</h3>
+        </div>
+        <div id="QuickQuiz" class="tabcontent">
+            <h3>Quick Quiz</h3>
+            <div id="quiz"></div>
+            <button id="submit">Get Results</button>
+            <div id="results"></div>
+        </div>
+        <div id="PracticeExamQuestions" class="tabcontent">
+            <h3>Practice and Exam Questions</h3>
+            <p><em>Note that the Practice Question(s) do not confine to the exam spec exactly but rather test knowledge on the subject.</em></p>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <hr>
+    <footer><div class="attribution">"Show Answers" CSS code by adardesign on Stack Overflow.</div></footer>
+    <script src="/quiz.js"></script>
+</html>
