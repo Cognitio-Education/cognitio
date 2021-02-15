@@ -129,14 +129,6 @@ blockquote p {
     border-radius: 5px;
 }
 
-blockquote p::before {
-    content: '\201C';
-}
-
-blockquote p::after {
-    content: '\201D';
-}
-
 a {
     color: blue;
     text-decoration: none;
