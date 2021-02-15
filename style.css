@@ -141,3 +141,7 @@ a {
 .subjecttype {
     width: 40%;
 }
+
+code {
+    background-color: gray;
+}
