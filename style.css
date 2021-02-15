@@ -44,7 +44,7 @@ body {
 
 .subjects {
     table-layout: fixed;
-    width: 30%;
+    width: 50%;
     text-align: center;
     align-content: center;
     margin-left: auto;
@@ -147,5 +147,5 @@ a {
 }
 
 .subjecttype {
-    width: 50%;
+    width: 40%;
 }
