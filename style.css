@@ -136,7 +136,7 @@ code {
 }
 
 .warning {
-    padding: 15px;
+    padding: 5px;
     background: rgb(255, 215, 35);
     border-radius: 5px;
 }
