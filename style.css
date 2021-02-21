@@ -139,7 +139,10 @@ code {
     padding: 5px;
     background: rgb(255, 215, 35);
     border-radius: 5px;
-    margin: auto;
+}
+
+.warning p {
+    margin-left: 10px;
 }
 
 a {
