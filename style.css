@@ -129,6 +129,12 @@ blockquote p {
     border-radius: 5px;
 }
 
+code {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
 a {
     color: blue;
     text-decoration: none;
