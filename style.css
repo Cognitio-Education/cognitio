@@ -124,15 +124,15 @@ blockquote {
 }
 
 blockquote p {
-    padding: 2px;
+    padding: 15px;
     background: #eee;
     border-radius: 5px;
 }
 
 code {
-    padding: 15px;
+    padding: 2px;
     background: #eee;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 a {
