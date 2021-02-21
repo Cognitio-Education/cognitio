@@ -124,7 +124,7 @@ blockquote {
 }
 
 blockquote p {
-    padding: 15px;
+    padding: 2px;
     background: #eee;
     border-radius: 5px;
 }
