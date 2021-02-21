@@ -135,6 +135,12 @@ code {
     border-radius: 4px;
 }
 
+.warning {
+    padding: 15px;
+    background: rgb(255, 215, 35);
+    border-radius: 5px;
+}
+
 a {
     color: blue;
     text-decoration: none;
