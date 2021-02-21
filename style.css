@@ -141,7 +141,7 @@ code {
     border-radius: 5px;
 }
 
-.warning p {
+.warning li, h4, p {
     margin-left: 10px;
 }
 
