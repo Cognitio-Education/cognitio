@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Biology of Food - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>The Biology of Food</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RevisionNotes')" id="defaultOpen">Revision Notes</button>
+            <button class="tablinks" onclick="openTab(event, 'QuickQuiz')">Quick Quiz</button>
+            <button class="tablinks" onclick="openTab(event, 'PracticeExamQuestions')">Practice and Exam Questions</button>
+            <button class="tablinks" onclick="location.href='/bio.html';">Back</button>
+        </div>
+        <div id="RevisionNotes" class="tabcontent">
+            <h3>Revision Notes</h3>
+            <h4>Carbohydrates</h4>
+            <p>Carbohydrates are molecules that contain carbon, hydrogen and oxygen, with no other elements. Organisms use these things for a variety of things:</p>
+            <ul>
+                <li>In animals, carbohydrates are primarily used for energy; they are broken down into glucose to be used for respiration.</li>
+                <li>They can also be used for structure, for example cellulose is a carbohydrate which is used in the cell wall.</li>
+                <li>They can also act as an energy store; starch is used like this in plants, and glycogen is used in animals.</li>
+            </ul>
+            <p>There are two types of carbohydrate: simple ones, which are monomers (individual molecules) and complex ones, which are polymers (chains of monomers bonded together).</p>
+            <p>The main ones we will look at are <b>starch</b> (a complex carbohydrate) and <b>glucose</b> (a simple carbohydrate). Starch molecules are made of glucose monomers. </p>
+            <h5>Testing for Starch</h5>
+            <p>To check if something contains starch, we use <b>iodine solution</b>. Iodine solution is orange-brown, and turns dark blue when in contact with starch.</p>
+            <h5>Testing for Glucose</h5>
+            <p>To check if something contains glucose, we use <b>Benedict's reagent</b>. Benedict's reagent is blue, and if glucose is present, the reagent will turn brick-red when the mixture is heated.</p>
+            <h4>Lipids</h4>
+            <p>Lipids are fats and oils. They contain carbon, hydrogen and oxygen and are made up of chains of fatty acids joined with glycerol. Lipids are used as a store of energy (like carbohydrates!).</p>
+            <h5>Testing for Lipids</h5>
+            <p>To check if something contains fat/lipids, we can use ethanol, a clear liquid, and water. The food is ground up with ethanol and passed through filter paper to leave just liquid. If when water is added, the mixture goes cloudy, then lipids are present. This is known as the emulsion test.</p> 
+            <h4>Proteins</h4>
+            <p>Proteins also contain carbon and hydrogen, but do not contain oxygen, and instead contain nitrogen. They are polymers made of chains of amino acids, and are used for making cells and tissues, and are used for the growth and repair of organisms.</p>
+            <h5>Testing for Protein</h5>
+            <p>To check if something contains proteins, we use the <b>Biuret test</b>. In this, we chop up the food and add potassium hydroxide, and then cover and shake the mixture. We then add copper sulfate, and if the mixture turns purple, then protein is present.</p>
+            <blockquote class="warning">
+                <h4>WARNING!</h5>
+                There are dangers to these tests: 
+                <ul>
+                    <li>You <b>MUST</b> wear eye protection if carrying out this practical.</li>
+                    <li>This practical should be done in a lab in the presence of a science teacher, <b>NOT AT HOME.</b></li>
+                    <li>Wash skin thoroughly if it comes into contact with the various liquids used.</li>
+                    <li>Take care with bunsen burners and boiling water when heating for a glucose test.</li>
+                    <li>Ethanol is <b>highly flammable.</b> Keep it away from naked flames.</li>
+                    <li>Copper sulfate is poisonous and sodium hydroxide is caustic. Take great care with both, and talk to your teacher <b>immediately</b> if you come into contact with any or ingest any by accident.</li>
+                    <li><b><em>THESE TEST METHODS ARE FOR THEORY PURPOSES ONLY, AND YOU SHOULD ONLY PERFORM IT IN SCIENCE LESSONS UNDER THE INSTRUCTION AND SUPERVISION OF YOUR TEACHER.</em></b></li>
+                </ul>
+            </blockquote>
+        </div>
+        <div id="QuickQuiz" class="tabcontent">
+            <h3>Quick Quiz</h3>
+            <div id="quiz"></div>
+            <button id="submit">Get Results</button><br>
+            <div id="results"></div>
+        </div>
+        <div id="PracticeExamQuestions" class="tabcontent">
+            <h3>Practice and Exam Questions</h3>
+            <p><em>Note that the Practice Question(s) do not confine to the exam spec exactly but rather test knowledge on the subject.</em></p>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <hr>
+    <footer><div class="attribution">"Show Answers" CSS code by adardesign on Stack Overflow.</div></footer>
+    <script src="/quiz.js"></script>
+</html>
