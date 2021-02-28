@@ -185,6 +185,8 @@ var submitButton = document.getElementById('submit');
 switch(window.location.pathname) {
     case "/chem/salts_acids.html":
         generateQuiz(salts_acids, quizContainer, resultsContainer, submitButton);
+    case "/bio/organisation.html":
+        generateQuiz(organisation, quizContainer, resultsContainer, submitButton);
     default:
         quizContainer.innerHTML = "<p>A quiz has not been made for this topic yet, sit tight!<p>"
 }
