@@ -62,7 +62,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
     }
 }
 
-var metals_acids = [
+var salts_acids = [
     {
         question: "Metal + water -> ?",
         answers: {
@@ -130,6 +130,6 @@ var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
 switch(window.location.pathname) {
-    case "/chem/metals_acids.html":
-        generateQuiz(metals_acids, quizContainer, resultsContainer, submitButton);
+    case "/chem/salts_acids.html":
+        generateQuiz(salts_acids, quizContainer, resultsContainer, submitButton);
 }
