@@ -17,17 +17,10 @@ body {
     color: darkslategray;
 }
 
-@media (prefers-color-scheme: light) {
-    html { background-color: ghostwhite; color: darkslategray }
-    a:link { color:paleturquoise }
-    a:visited { color:paleturquoise}
-}
+html { background-color: darkslategray; color: ghostwhite }
+a:link { color:paleturquoise }
+a:visited { color:paleturquoise}
 
-@media (prefers-color-scheme: dark) {
-    html { background-color: darkslategray; color: ghostwhite }
-    a:link { color:paleturquoise }
-    a:visited { color:paleturquoise}
-}
 
 .title {
     text-align: center;

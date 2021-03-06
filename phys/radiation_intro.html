@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radiation and Atoms - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>Radiation and Atoms</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RevisionNotes')" id="defaultOpen">Revision Notes</button>
+            <button class="tablinks" onclick="openTab(event, 'QuickQuiz')">Quick Quiz</button>
+            <button class="tablinks" onclick="openTab(event, 'PracticeExamQuestions')">Practice and Exam Questions</button>
+            <button class="tablinks" onclick="location.href='/phys.html';">Back</button>
+        </div>
+        <div id="RevisionNotes" class="tabcontent">
+            <h3>Revision Notes</h3>
+            <p>Radiation was first observed by physicist Henri Becquerel in 1896. He noticed that some uranium salts he had in a drawer caused an image of a metal key, which sat underneath the salts, to form on some photographic film under the key. Becquerel asked a fellow scientist, Marie Curie to investigate, and she and her husband Pierre discovered <b>radiation</b>.</p>
+            <p>Radiation is when an unstable nucleus (an unstable one is one that decays) <b>decays, or emits radiation particles</b>. This emission is completely random, and a decaying atom with an unstable nucleus is known as <b>radioactive</b>.</p>
+            <p>Later on, physicist Ernst Rutherford performed further tests, and discovered that there were two types of radiation, alpha and beta. Later scientists discovered a third type; gamma. These will be explained in the section below.</p>
+            <h4>Types of Radiation</h4>
+            <p>There are three types of radiation:</p>
+            <ul>
+                <li><b>Alpha radiation (&#945;):</b> An alpha particle consists of two protons and two neutrons, and so is equivalent to a helium nucleus. Its relative charge is 2, and its relative mass is 4.</li>
+                <li><b>Beta radiation (&#946;):</b> A beta particle consists of an electron, which is emitted when a neutron in the nucleus turns into a proton. Its relative mass and charge are the same as an electron.</li>
+                <li><b>Gamma radiation (&#947;):</b> Gamma radiation is a high energy, high frequency wave. No particles are emitted from the nucleus of the atom.</li>
+            </ul>
+            <p>Each type of radiation has a different effect on the mass and atomic numbers of the atom. Alpha radiation decreases the mass by 4 and the atomic number by 2, beta radiation does not decrease the mass, but <b>increases</b> the atomic number by 1 (since a neutron has changed into a proton). Gamma radiation has no effect on the atom's nucleus.</p>
+            <p>The types of radiation also have different abilities to penetrate things (go through them). Alpha radiation is the least penetrating and can be stopped with paper, beta radiation is in the middle and can be stopped with aluminium, and gamma radiation is the most penetrating, and can only be stopped with a thick sheet of lead.</p>
+            <p>Radiation can also <b>ionise</b> atoms by taking away their electrons, turning them into ions. Alpha particles have the biggest mass and so can do this best, but gamma radiation is ineffective at this as it has no mass at all. The ionising power is what makes alpha radiation so dangerous; it can change DNA, causing cells to divide uncontrollably, forming a tumour.</p>
+            <img src="/images/phys/RadiationTypes.png" class="intab">
+        </div>
+        <div id="QuickQuiz" class="tabcontent">
+            <h3>Quick Quiz</h3>
+            <div id="quiz"></div>
+            <button id="submit">Get Results</button><br>
+            <div id="results"></div>
+        </div>
+        <div id="PracticeExamQuestions" class="tabcontent">
+            <h3>Practice and Exam Questions</h3>
+            <p><em>Note that the Practice Question(s) do not confine to the exam spec exactly but rather test knowledge on the subject.</em></p>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <hr>
+    <footer><div class="attribution">"Show Answers" CSS code by adardesign on Stack Overflow.</div></footer>
+    <script src="/quiz.js"></script>
+</html>
