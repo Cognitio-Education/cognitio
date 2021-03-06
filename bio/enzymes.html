@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enzymes - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>Enzymes</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'RevisionNotes')" id="defaultOpen">Revision Notes</button>
+            <button class="tablinks" onclick="openTab(event, 'QuickQuiz')">Quick Quiz</button>
+            <button class="tablinks" onclick="openTab(event, 'PracticeExamQuestions')">Practice and Exam Questions</button>
+            <button class="tablinks" onclick="location.href='/bio.html';">Back</button>
+        </div>
+        <div id="RevisionNotes" class="tabcontent">
+            <h3>Revision Notes</h3>
+            <p>In chemistry, a catalyst is a substance that speeds up a reaction but is not used up itself.</p>
+            <p>In biology, enzymes act as catalysts, speeding up reactions in organisms.</p>
+            <p>Metabolism is the total reactions happening in a cell or organism.</p>
+            <p>More specifically, enzymes are proteins which speed up chemical reactions inside cells. Each type of enzyme does a specific job, and their names often end in <code>-ase</code>. In terms of digestion, the three main enzymes you need to know about are <b>amylase, protease and lipase.</b> Information about them can be seen in the table below:</p>
+            <table>
+                <thead>
+                  <tr>
+                    <b>
+                        <th>ENZYME</th>
+                        <th>Where is it made?</th>
+                        <th>Where does it work?</th>
+                        <th>What does it do?</th>
+                    </b>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amylase</td>
+                    <td>Salivary glands, pancreas, small intestine</td>
+                    <td>Mouth, small intestine</td>
+                    <td>Catalyses breakdown of starch into sugars.</td>
+                  </tr>
+                  <tr>
+                    <td>Protease</td>
+                    <td>Stomach, pancreas, small intestine</td>
+                    <td>Stomach, small intestine</td>
+                    <td>Catalyses breakdown of proteins into amino acids.</td>
+                  </tr>
+                  <tr>
+                    <td>Lipase</td>
+                    <td>Pancreas, small intestine</td>
+                    <td>Small intestine</td>
+                    <td>Catalyses breakdown of lipids into fatty acids and glycerol.</td>
+                  </tr>
+                </tbody>
+            </table>
+            <p>The shape of an enzyme is very important, and is determined by the sequence of its amino acids. Different enzymes have different shapes and functions because of the order of these acids. Only one type of <b>substrate</b> (the thing that is catalysed by an enzyme) can fit into the <b>active site</b> (the place in which the substrate fits and the reaction takes place) of an enzyme. One theory is that the active site is slightly flexible and changes to fit the substrate better; this is known as <b>induced fit</b>, although the main theory is that it fits directly, and this is known as <b>lock and key theory</b>, with the enzyme being the lock and the substrate being the key. Induced fit theory is shown in the diagram below, although lock and key theory is nearly identical, just not including the flexibility aspect.</p>
+            <img src="/images/bio/InducedFitEnzyme.png" class="intab">
+            <h4>pH and Temperature</h4>
+            <p>Enzymes have specific conditions in which they work best, more specifically a temperature, and a pH (how acidic or alkaline something is) that are optimal for it to work. These are known as the <b>optimum</b> values. In the human body, this is usually a pH of 7 and a temperature of 37&#8451;.</p>
+            <p>When the pH or temperature is below this value, it is less efficient, and as the temperature increases to that point the reaction which the enzyme catalyses happens faster (for temperature, this happens because the kinetic energy is higher, and so the molecules move faster meaning that they are more likely to collide and attach (known as <b>collision theory</b>)). However, once this optimum is reached, as the values continue to increase, the enzyme becomes <em>less</em> effective, as it is too acidic/alkaline/hot for the enzyme to work well. If the value is too high, then the bonds in the enzyme can break, causing the proteins to unfold and the shape of the enzyme to change. At this point, the enzyme is <b>denatured</b>, and will not work anymore, significantly slowing the rate of reaction.</p>
+            <p>An exception to the rule of pH 7 in the body is the stomach, as the enzymes that work there work better in acidic conditions. This is why your body produces stomach acid, and then produces bile to bring the pH back to 7 in the small intestine.</p>
+            <p>The graph below shows an enzyme with an optimum temperature of about 40&#8451;.</p>
+            <img src="/images/bio/EnzymeGraph.png">
+            <em><p>(By &lt;a href=&quot;//commons.wikimedia.org/wiki/User:Gal_m&quot; title=&quot;User:Gal m&quot;&gt;Gal m&lt;/a&gt; - &lt;span class=&quot;int-own-work&quot; lang=&quot;en&quot;&gt;Own work&lt;/span&gt;, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2924145">Link</a>)</p></em>
+            <h4>Bile</h4>
+            <p>The liver produces bile, and this is stored in the gallbladder. When food arrives in the small intestine, having been made acidic by the stomach, the bile travels through the bile duct to neutralise it, since bile is alkaline. To be precise, the alkali is sodium hydrocarbonate. The neutralisation exists to make the conditions better for the enzymes in the small intestine to work in.</p>
+            <p>Bile also emulsifies fats into smaller droplets, giving a larger surface area for lipase to work on.</p>
+        </div>
+        <div id="QuickQuiz" class="tabcontent">
+            <h3>Quick Quiz</h3>
+            <div id="quiz"></div>
+            <button id="submit">Get Results</button><br>
+            <div id="results"></div>
+        </div>
+        <div id="PracticeExamQuestions" class="tabcontent">
+            <h3>Practice and Exam Questions</h3>
+            <p><em>Note that the Practice Question(s) do not confine to the exam spec exactly but rather test knowledge on the subject.</em></p>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <hr>
+    <footer><div class="attribution">"Show Answers" CSS code by adardesign on Stack Overflow.</div></footer>
+    <script src="/quiz.js"></script>
+</html>
