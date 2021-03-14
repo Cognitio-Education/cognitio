@@ -140,3 +140,7 @@ a {
 .subjecttype {
     width: 40%;
 }
+
+.tabtable {
+    border: 1px solid darkslategray;
+}
