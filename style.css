@@ -141,6 +141,11 @@ a {
     width: 40%;
 }
 
-.tabtable {
+.tabtable table, th, td {
     border: 1px solid darkslategray;
+    border-collapse: collapse;
+}
+
+.tabtable td {
+    padding: 10px;
 }
