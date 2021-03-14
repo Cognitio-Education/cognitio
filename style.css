@@ -116,7 +116,7 @@ blockquote {
     margin: 0;
 }
 
-blockquote p {
+.quote blockquote p {
     padding: 15px;
     background: #eee;
     border-radius: 5px;
