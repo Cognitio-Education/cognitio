@@ -105,16 +105,6 @@ a:visited { color:paleturquoise}
     margin-right: 10%;
 }
 
-.answer {
-  background: none!important;
-  border: none;
-  color: #069;
-  cursor: pointer;
-}
-
-blockquote {
-    margin: 0;
-}
 
 .quote blockquote p {
     padding: 15px;
