@@ -178,6 +178,8 @@ var organisation = [
     }
 ]
 
+var acids_alkalis=[{question:"What is pH a measure of?",answers:{a:"Solubility",b:"H+ ion concentration",c:"Water concentration",d:"Number"},correctAnswer:"b"},{question:"What is the difference in concentration between pH 1 and 4?",answers:{a:"x100",b:"x10",c:"x10000",d:"x1000"},correctAnswer:"d"},{question:"pH 1 = ? mole/dm^3",answers:{a:"0",b:"0.1",c:"1",d:"100"},correctAnswer:"b"},{question:"What ions do acids release?",answers:{a:"H+",b:"OH-",c:"H20",d:"H-"},correctAnswer:"a"},{question:"What is a base?",answers:{a:"A soluble alkali",b:"A H+ ion acceptor",c:"An element",d:"A hydrogen ion"},correctAnswer:"b"}]
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -189,6 +191,8 @@ switch(window.location.pathname) {
     case "/bio/organisation.html":
         generateQuiz(organisation, quizContainer, resultsContainer, submitButton);
         break;
+    case "/chem/acids_alkalis.html":
+        generateQuiz(acids_alkalis, quizContainer, resultsContainer, submitButton);
     default:
         quizContainer.innerHTML = "<p>A quiz has not been made for this topic yet, sit tight!<p>"
 }
