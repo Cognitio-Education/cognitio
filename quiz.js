@@ -235,6 +235,63 @@ var acids_alkalis = [
         correctAnswer: "b"
     }]
 
+    var reactivity_displacement = [
+        {
+            question: "Which of the following metals cannot be reduced with carbon?",
+            answers:
+            {
+                a: "Iron",
+                b: "Copper",
+                c: "Aluminium",
+                d: "Lead"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "What is reduction?",
+            answers:
+            {
+                a: "Loss of electrons, gaining of oxygen",
+                b: "Loss of hydrogen ions",
+                c: "Gaining of electrons, loss of oxygen",
+                d: "A change in colour"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "Which of the following is a method of extracting metals more reactive than carbon?",
+            answers:
+            {
+                a: "Blast furnace",
+                b: "React with copper",
+                c: "React with hydrogen",
+                d: "Electrolysis"
+            },
+            correctAnswer: "d"
+        },
+        {
+            question: "Which of the following metals is the most reactive?",
+            answers:
+            {
+                a: "Ca",
+                b: "Au",
+                c: "Zn",
+                d: "Cu"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "Which of the following react vigorously with water?",
+            answers:
+            {
+                a: "Magnesium, Aluminium, Zinc",
+                b: "Copper, Gold, Silver",
+                c: "Zinc, Iron, Tin",
+                d: "Potassium, Sodium, Calcium"
+            },
+            correctAnswer: "d"
+        }]
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -248,6 +305,9 @@ switch(window.location.pathname) {
         break;
     case "/chem/acids_alkalis.html":
         generateQuiz(acids_alkalis, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/chem/reactivity_displacement.html":
+        generateQuiz(reactivity_displacement, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<p>A quiz has not been made for this topic yet, sit tight!<p>"
