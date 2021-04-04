@@ -235,7 +235,7 @@ var acids_alkalis = [
         correctAnswer: "b"
     }]
 
-    var reactivity_displacement = [
+var reactivity_displacement = [
         {
             question: "Which of the following metals cannot be reduced with carbon?",
             answers:
@@ -292,6 +292,64 @@ var acids_alkalis = [
             correctAnswer: "d"
         }]
 
+
+var digestion_intro = [
+    {
+        question: "In which of the following does mechanical digestion occur?",
+        answers:
+        {
+            a: "Liver",
+            b: "Large intestine",
+            c: "Gallbladder",
+            d: "Stomach"
+        },
+        correctAnswer: "d"
+    },
+    {
+        question: "Which of these does the liver NOT do?",
+        answers:
+        {
+            a: "Produce bile",
+            b: "Emulsify fats",
+            c: "Produce enzymes",
+            d: "Send bile to the gallbladder"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Which of the following is false?",
+        answers:
+        {
+            a: "The large intestine absorbs water",
+            b: "The stomach absorbs nutrients",
+            c: "The pancreas produces enzymes",
+            d: "The small intestine absorbs nutrients"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "What is the ring of muscle that releases faeces called?",
+        answers:
+        {
+            a: "Pancreas",
+            b: "Rectum",
+            c: "Liver",
+            d: "Anus"
+        },
+        correctAnswer: "d"
+    },
+    {
+        question: "Which organ's contents are acidic?",
+        answers:
+        {
+            a: "The small intestine",
+            b: "The large intestine",
+            c: "The stomach",
+            d: "The gallbladder"
+        },
+        correctAnswer: "c"
+    }]
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -308,6 +366,9 @@ switch(window.location.pathname) {
         break;
     case "/chem/reactivity_displacement.html":
         generateQuiz(reactivity_displacement, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/bio/digestion_intro.html":
+        generateQuiz(digestion_intro, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<p>A quiz has not been made for this topic yet, sit tight!<p>"
