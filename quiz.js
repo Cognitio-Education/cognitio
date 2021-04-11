@@ -22,6 +22,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
                 + '<div class="answers">' + answers.join('') + '</div><br>'
             );
         }
+        output.push("<button id=\"submit\">Get Results</button><br>")
         quizContainer.innerHTML = output.join('');
     }
     
