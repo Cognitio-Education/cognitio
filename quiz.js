@@ -420,5 +420,5 @@ switch(window.location.pathname) {
         generateQuiz(classifying_acids, quizContainer, resultsContainer, submitButton);
         break;
     default:
-        quizContainer.innerHTML = "<p>A quiz has not been made for this topic yet, sit tight!<p>"
+        quizContainer.innerHTML = "<img src=\"/images/noQuiz.png\">"
 }
