@@ -350,6 +350,52 @@ var digestion_intro = [
         correctAnswer: "c"
     }]
 
+var classifying_acids = [
+    {
+        question: "Which of the following is NOT a strong acid?",
+        answers:
+        {
+            a: "Sulfuric acid",
+            b: "Hydrochloric acid",
+            c: "Methanoic acid",
+            d: "Nitric acid"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Which of the following is the correct definition of dissociation?",
+        answers:
+        {
+            a: "The splitting of an acid into its ions",
+            b: "The dissolving of an acid",
+            c: "The neutralisation of an acid with an alkali",
+            d: "Burning of an acid"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Which of the following is unusual about weak acids?",
+        answers:
+        {
+            a: "They can release H+ ions",
+            b: "Their dissociation is reversible",
+            c: "They can be dissolved in water",
+            d: "They can exist as a liquid"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Which of these is NOT a weak acid?",
+        answers:
+        {
+            a: "Methanoic acid",
+            b: "Ethanoic acid",
+            c: "Hydrochloric acid",
+            d: "Phosphoric acid"
+        },
+        correctAnswer: "d"
+    },]
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -369,6 +415,9 @@ switch(window.location.pathname) {
         break;
     case "/bio/digestion_intro.html":
         generateQuiz(digestion_intro, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/chem/classifying_acids.html":
+        generateQuiz(classifying_acids, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<p>A quiz has not been made for this topic yet, sit tight!<p>"
