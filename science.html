@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reactivity and Displacbent - Cognitio</title>
+        <div class="title">
+            <h1>Cognitio</h1>
+            <h2>Reactivity and Displacbent</h2>
+        </div>
+        <link rel=stylesheet href="/style.css">
+        <script src="/tabs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'PeriodicTable')" id="defaultOpen">Periodic Table</button>
+            <button class="tablinks" onclick="openTab(event, 'Units')">Scientific Units</button>
+            <button class="tablinks" onclick="location.href='/index.html';">Back</button>
+        </div>
+        <div id="PeriodicTable" class="tabcontent">
+            <img src="/images/Periodic_table_large.svg">
+            <p>Note: this table is more complex than necessary at GCSE (ionisation energy, electronegativity and complex electron configuration are not essential for GCSE-level science), and the atomic masses should be rounded for GCSE.</p>
+            <p><em><a href="https://commons.wikimedia.org/w/index.php?curid=8757312">(By 2012rc - Own work Notes and font fixed: WilfredorUpdates 2016, 2018 (new names, atomic weights, ...): others, DePiep, CC BY 3.0)</em></a></p>
+        </div>
+        <div id="Units" class="tabcontent">
+            <h4>SI Units</h4>
+            <ul>
+                <li><p><b>K</b>elvin - Tbperature</p></li>
+                <li><p><b>A</b>mpere - Electrical current</p></li>
+                <li><p><b>m</b>eter - Length</p></li>
+                <li><p><b>s</b>econd - Time</p></li>
+                <li><p><b>k</b>ilo<b>g</b>ram - Mass</p></li>
+                <li><p><b>mol</b>e - Amount of substance</p></li>
+                <li><p><b>c</b>an<b>d</b>ela - Luminous intensity</p></li>
+            </ul>
+            <h4>Decimal Prefixes</h4>
+            <ul>
+                <li><p>p - pico - 10<sup>-12</sup></p></li>
+                <li><p>n - nano - 10<sup>-9</sup></p></li>
+                <li><p>μ - micro - 10<sup>-6</sup></p></li>
+                <li><p>m - milli - 10<sup>-3</sup></p></li>
+                <li><p>c - centi - 10<sup>-2</sup></p></li>
+                <li><p>d - deci - 10<sup>-1</sup></p></li>
+                <li><p><b>10<sup>0</sup></b></p></li>
+                <li><p>da - deca - 10<sup>1</sup></p></li>
+                <li><p>h - hecto - 10<sup>2</sup></p></li>
+                <li><p>k - kilo - 10<sup>3</sup></p></li>
+                <li><p>M - mega - 10<sup>6</sup></p></li>
+                <li><p>G - giga - 10<sup>9</sup></p></li>
+                <li><p>T - tera - 10<sup>12</sup></p></li>
+            </ul>
+        </div>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+</html>
