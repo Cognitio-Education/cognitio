@@ -394,7 +394,7 @@ var classifying_acids = [
             c: "Hydrochloric acid",
             d: "Phosphoric acid"
         },
-        correctAnswer: "d"
+        correctAnswer: "c"
     },]
 
 var quizContainer = document.getElementById('quiz');
