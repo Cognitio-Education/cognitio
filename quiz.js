@@ -397,6 +397,52 @@ var classifying_acids = [
         correctAnswer: "c"
     },]
 
+var food_biology = [
+    {
+        question: "Which of the following is NOT a use for carbohydrates?",
+        answers:
+        {
+            a: "As an energy store",
+            b: "As an energy source",
+            c: "For growth and repair of tissues",
+            d: "For structure in cells"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Which method is used to test for lipids?",
+        answers:
+        {
+            a: "Biuret reagent/test",
+            b: "Benedict's reagent",
+            c: "Iodine solution",
+            d: "Ethanol + water"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Which method is used to test for starch?",
+        answers:
+        {
+            a: "Biuret reagent/test",
+            b: "Benedict's reagent",
+            c: "Iodine solution",
+            d: "Ethanol + water"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Which of the following is false?",
+        answers:
+        {
+            a: "Lipids are used as an energy store.",
+            b: "Proteins contain nitrogen.",
+            c: "Proteins, lipids and carbohydrates all contain carbon.",
+            d: "Carbohydrates do not contain oxygen."
+        },
+        correctAnswer: "d"
+    },]
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -419,6 +465,9 @@ switch(window.location.pathname) {
         break;
     case "/chem/classifying_acids.html":
         generateQuiz(classifying_acids, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/bio/food_biology.html":
+        generateQuiz(food_biology, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<img src=\"/images/noQuiz.png\">"
