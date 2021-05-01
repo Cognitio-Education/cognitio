@@ -123,8 +123,7 @@ var salts_acids = [
             d: "boil the acid"
         },
         correctAnswer: "d"
-    }
-]
+    }];
 
 var organisation = [
     {
@@ -176,8 +175,7 @@ var organisation = [
             d: "An organ system which contains the heart."
         },
         correctAnswer: "b"
-    }
-]
+    }];
 
 var acids_alkalis = [
     {
@@ -234,7 +232,7 @@ var acids_alkalis = [
             d: "A hydrogen ion"
         },
         correctAnswer: "b"
-    }]
+    }];
 
 var reactivity_displacement = [
         {
@@ -291,7 +289,7 @@ var reactivity_displacement = [
                 d: "Potassium, Sodium, Calcium"
             },
             correctAnswer: "d"
-        }]
+        }];
 
 
 var digestion_intro = [
@@ -349,7 +347,7 @@ var digestion_intro = [
             d: "The gallbladder"
         },
         correctAnswer: "c"
-    }]
+    }];
 
 var classifying_acids = [
     {
@@ -395,7 +393,7 @@ var classifying_acids = [
             d: "Phosphoric acid"
         },
         correctAnswer: "c"
-    },]
+    },];
 
 var food_biology = [
     {
@@ -441,7 +439,7 @@ var food_biology = [
             d: "Carbohydrates do not contain oxygen."
         },
         correctAnswer: "d"
-    },]
+    },];
 
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
