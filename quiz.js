@@ -393,7 +393,7 @@ var classifying_acids = [
             d: "Phosphoric acid"
         },
         correctAnswer: "c"
-    },];
+    }];
 
 var food_biology = [
     {
@@ -439,7 +439,7 @@ var food_biology = [
             d: "Carbohydrates do not contain oxygen."
         },
         correctAnswer: "d"
-    },];
+    }];
 
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
