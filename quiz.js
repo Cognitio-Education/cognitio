@@ -441,6 +441,58 @@ var food_biology = [
         correctAnswer: "d"
     }];
 
+var enzymes = [
+    {
+        question: "What is the name of the theory in which the active site of an enzyme is slightly flexible?",
+        answers: {
+            a: "Lock and key theory",
+            b: "Substrate theory",
+            c: "Induced fit theory",
+            d: "Enzyme theory"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "What is the term for when an enzyme stops working due to its conditions?",
+        answers: {
+            a: "Denaturing",
+            b: "pH",
+            c: "Optimum values",
+            d: "Amylase"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "What is the optimum temperature for enzymes in the human body (in general)?",
+        answers: {
+            a: "34&#8451;",
+            b: "35&#8451;",
+            c: "36&#8451;",
+            d: "37&#8451;"
+        },
+        correctAnswer: "d"
+    },
+    {
+        question: "Which of these enzymes works in the stomach?",
+        answers: {
+            a: "Amylase",
+            b: "Protease",
+            c: "Lipase",
+            d: "None of the above"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Give the correct definiton of a substrate.",
+        answers: {
+            a: "A biological catalyst.",
+            b: "Something that controls the rate of a reaction.",
+            c: "Something which is affected by an enzyme.",
+            d: "The enzyme used to catalyse the breakdown of proteins into amino acids."
+        },
+        correctAnswer: "c"
+    }];
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -466,6 +518,9 @@ switch(window.location.pathname) {
         break;
     case "/bio/food_biology.html":
         generateQuiz(food_biology, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/bio/enzymes.html":
+        generateQuiz(enzymes, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<img src=\"/images/noQuiz.png\">"
