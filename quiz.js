@@ -492,6 +492,58 @@ var enzymes = [
         correctAnswer: "c"
     }];
 
+var cell_structure = [
+    {
+        question: "Which of the following is NOT found in an animal cell?",
+        answers: {
+            a: "Mitochondria",
+            b: "Nucleus",
+            c: "Cell wall",
+            d: "Cytoplasm"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Which organelle is known as the 'powerhouse' of the cell?",
+        answers: {
+            a: "Mitochondria",
+            b: "Chloroplasts",
+            c: "Cell wall",
+            d: "Cytoplasm"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Which organelle performs photosynthesis?",
+        answers: {
+            a: "Mitochondria",
+            b: "Chloroplasts",
+            c: "Cell wall",
+            d: "Cytoplasm"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Which organelle performs aerobic respiration?",
+        answers: {
+            a: "Mitochondria",
+            b: "Chloroplasts",
+            c: "Cell wall",
+            d: "Cytoplasm"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Give the correct definiton of a vacuole.",
+        answers: {
+            a: "An organelle which makes the cell/plant green.",
+            b: "A gel in which organelles are suspended.",
+            c: "A support structure made of cellulose.",
+            d: "A sac filled with cell sap."
+        },
+        correctAnswer: "d"
+    }];
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -520,6 +572,9 @@ switch(window.location.pathname) {
         break;
     case "/bio/enzymes.html":
         generateQuiz(enzymes, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/bio/cell_structure.html":
+        generateQuiz(cell_structure, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<img src=\"/images/noQuiz.png\">"
