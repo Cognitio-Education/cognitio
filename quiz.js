@@ -501,7 +501,7 @@ var cell_structure = [
             c: "Cell wall",
             d: "Cytoplasm"
         },
-        correctAnswer: "b"
+        correctAnswer: "c"
     },
     {
         question: "Which organelle is known as the 'powerhouse' of the cell?",
