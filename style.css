@@ -18,8 +18,8 @@ body {
 }
 
 html { background-color: darkslategray; color: ghostwhite }
-a:link { color:paleturquoise }
-a:visited { color:paleturquoise}
+a:link { color:#1987e0 }
+a:visited { color:#1987e0}
 
 
 .title {
