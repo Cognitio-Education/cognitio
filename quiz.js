@@ -544,6 +544,58 @@ var cell_structure = [
         correctAnswer: "d"
     }];
 
+var microscopes = [
+    {
+        question: "Which of the following is NOT a part of the microscope?",
+        answers: {
+            a: "Glass lens",
+            b: "Objective lens",
+            c: "Coarse focus",
+            d: "Eyepiece lens"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Which equation allows us to find the real size of a magnified image?",
+        answers: {
+            a: "image size x magnification",
+            b: "magnification / image size",
+            c: "image size / magnification",
+            d: "image size + magnification"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Which of the following is a disadvantage of an electron microscope?",
+        answers: {
+            a: "It allows for a higher resolution",
+            b: "It allows for a greater magnification",
+            c: "It is very cheap",
+            d: "It cannot take colour images"
+        },
+        correctAnswer: "d"
+    },
+    {
+        question: "Why are there two focus controls?",
+        answers: {
+            a: "In order to see the cells more clearly",
+            b: "It allows for colour images",
+            c: "In order to have more control over the focus of the image",
+            d: "In order to zoom in further to the cell"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "A cell, size 26μm is magnified 100x. What is the image size?",
+        answers: {
+            a: "2.6mm",
+            b: "26mm",
+            c: "260μm",
+            d: "2.6cm"
+        },
+        correctAnswer: "a"
+    }];
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -575,6 +627,9 @@ switch(window.location.pathname) {
         break;
     case "/bio/cell_structure.html":
         generateQuiz(cell_structure, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/bio/microscopes.html":
+        generateQuiz(microscopes, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<img src=\"/images/noQuiz.png\">"
