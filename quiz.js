@@ -583,7 +583,7 @@ var microscopes = [
             c: "In order to have more control over the focus of the image",
             d: "In order to zoom in further to the cell"
         },
-        correctAnswer: "a"
+        correctAnswer: "c"
     },
     {
         question: "A cell, size 26μm is magnified 100x. What is the image size?",
