@@ -596,6 +596,48 @@ var microscopes = [
         correctAnswer: "a"
     }];
 
+var cell_transport = [
+    {
+        question: "Which of the following is an example of active transport in the human body?",
+        answers: {
+            a: "Gas exchange in the alveoli",
+            b: "Transfer of sugars in the small intestine",
+            c: "Transfer of water in the cells",
+            d: "Gas exchange in the cells"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "In which direction does diffusion occur?",
+        answers: {
+            a: "From low concentration to high concentration",
+            b: "From high concentration to low concentration",
+            c: "Between areas of equal concentration",
+            d: "They do not move in any direction"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "In which direction does osmosis occur?",
+        answers: {
+            a: "Between areas of equal concentration",
+            b: "They do not move in any direction",
+            c: "From high concentration to low concentration",
+            d: "From low concentration to high concentration"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Which transport process occurs in the lungs?",
+        answers: {
+            a: "Active transport",
+            b: "No transport occurs",
+            c: "Osmosis",
+            d: "Diffusion"
+        },
+        correctAnswer: "d"
+    }];
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
@@ -630,6 +672,9 @@ switch(window.location.pathname) {
         break;
     case "/bio/microscopes.html":
         generateQuiz(microscopes, quizContainer, resultsContainer, submitButton);
+        break;
+    case "/bio/cell_transport.html":
+        generateQuiz(cell_transport, quizContainer, resultsContainer, submitButton);
         break;
     default:
         quizContainer.innerHTML = "<img src=\"/images/noQuiz.png\">"
